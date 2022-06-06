@@ -1,0 +1,29 @@
+:root {
+  --main-color: #784ed1;
+  --second-color: #00aea4;
+  --black-color: #14151a;
+  --black-color-100 :#85888f;
+  
+
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.5rem;
+  font-family: "vazir";
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol {
+  list-style-type: none;
+}
