@@ -148,7 +148,6 @@ textarea {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-
 }
 .content-services__contents {
   padding: 0 1rem;
@@ -189,6 +188,44 @@ textarea {
   width: 100%;
   height: auto;
 }
+/*  Counter */
+.counter {
+  width: 100%;
+  background-color: #4c505b;
+  background-image: url("../image/by-numbers-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3.2rem 1.5rem;
+}
+.cuonter__services{
+  width: 100%;
+  flex: 1;
+  max-width: 132.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.count {
+  padding: 1.6rem 0;
+  text-align: center;
+  color: #fff;
+}
+.count__number {
+  font-size: 4.2rem;
+  font-weight: 500;
+  direction: ltr;
+}
+.count__number span {
+  color: #d3bdff;
+}
+.count__text{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 1199px) {
   .content-services{
     padding: 2.5rem;
@@ -202,11 +239,21 @@ textarea {
   .cart-service__content p {
     font-size: 1.2rem;
   }
-
+  .counter {
+    padding: 0.8rem 1.5rem;
+  }
+  .count__number {
+    font-size: 3.6rem;
+  }
+  .count__text{
+    font-size: 1.2rem;
+  }
 }
+
 @media screen and (max-width: 992px) {
   
 }
+
 @media screen and (max-width: 767px) {
   .content-services {
     flex-direction: column-reverse;
@@ -226,8 +273,16 @@ textarea {
   .cart-service__content{
     max-width: 100%;
   }
-
+  .counter {
+    padding: 2.4rem 1.5rem;
+  }
 }
+
 @media screen and (max-width: 575px) {
-  
+  .counter {
+    background-size: 300%;
+  }
+  .cuonter__services{
+    flex-direction: column;
+  }
 }
