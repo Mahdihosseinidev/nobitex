@@ -108,10 +108,27 @@
             </div>
           </div>
           <div class="content-services__box-image">
-            <img
-              src="./assets/image/app-screenshot.webp"
-              alt="app-screenshot"
-            />
+            <picture>
+              <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                srcset="./assets/image/app-screenshot-mobile.webp"
+              />
+              <source
+                type="image/webp"
+                media="(max-width: 1199px )"
+                srcset="./assets/image/app-screenshot-tablet.webp"
+              />
+              <source
+                type="image/webp"
+                srcset="./assets/image/app-screenshot.webp"
+              />
+              <img
+                src="./assets/image/app-screenshot.webp"
+                alt="app-screenshot"
+                loading="lazy"
+              />
+            </picture>
           </div>
         </section>
       </div>
