@@ -386,7 +386,6 @@ textarea {
   }
 }
 
-
 @media screen and (max-width: 992px) {
   .banner__content{
     max-width: 38rem;
@@ -426,11 +425,11 @@ textarea {
   }
   .lerning-item__link p {
     color: #784ed1;
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 
   }
   .banner__wrapper{
-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .banner__image {
     position: relative;
