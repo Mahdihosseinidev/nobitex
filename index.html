@@ -206,7 +206,24 @@
           <a href="#" class="banner__content-purplr-btn">بیشتر بدانید</a>
         </div>
         <div class="banner__image">
-          <img src="./assets/image/profit-img.webp" alt="" />
+          <picture>
+            <source
+              type="image/webp"
+              media="(max-width: 767px)"
+              srcset="./assets/image/profit-img-mobile.webp"
+            />
+            <source
+              type="image/webp"
+              media="(max-width: 1199px )"
+              srcset="./assets/image/profit-img-tablet.webp"
+            />
+            <source type="image/webp" srcset="./assets/image/profit-img.webp" />
+            <img
+              src="./assets/image/profit-img.webp"
+              alt="app-screenshot"
+              loading="lazy"
+            />
+          </picture>
         </div>
       </div>
     </section>
