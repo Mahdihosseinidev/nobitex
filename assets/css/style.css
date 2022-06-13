@@ -654,6 +654,27 @@ textarea {
     padding: 0.3rem 1.6rem;
     font-size: 1.2rem;
   }
+  .main-footer__application {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-footer__application-title {
+    margin-bottom: 2.4rem;
+  }
+  .main-footer__section-position {
+    display: none;
+  }
+  .copyright__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .social-media {
+    margin-bottom: 1.6rem;
+  }
+  .copyright__wrapper-text {
+    font-size: 1.5rem;
+    margin-top: 0.8rem ;
+  }
 }
 @media screen and (max-width: 992px) {
   .banner__content{
@@ -671,6 +692,10 @@ textarea {
   }
   .support__btns-white {
     display: none;
+  }
+  .main-footer__links{
+
+    padding: 2.4rem 1.5rem;
   }
 }
 @media screen and (max-width: 767px) {
@@ -731,6 +756,78 @@ textarea {
   .support__title {
     font-size: 1.2rem;
     margin-bottom: 0.8rem;
+  }
+  .main-footer__links {
+    flex-direction: column;
+    padding: 1.6rem 1.5rem;
+
+  }
+  .main-footer__section {
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+  /* START - Accordion */
+  .main-footer__nav-title {
+    font-size: 1.5rem;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: block;
+  }
+  .main-footer__nav-title::before {
+    content: url("../image/arrow-top.svg");
+    position: absolute;
+    left: 0;
+    transform: unset;
+  }
+
+  .main-footer__nav li a {
+    font-size: 1.2rem;
+  }
+
+  .main-footer__nav{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    padding: 0.8rem 0 0;
+    margin: 0;
+  }
+  /* END - Accordion */
+  .main-footer__application-download-box {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .main-footer__application-download-box a {
+    margin: 1.6rem 1rem 0;
+    max-width: 13.5rem;
+  }
+  .main-footer__application-download-box img {
+    width: 100%;
+  }
+  .main-footer__application {
+    padding: 0 1.5rem 0.8rem;
+  }
+  .copyright {
+    border: none;
+  }
+  .copyright__wrapper {
+    padding: 1.6rem 1.5rem;
+  }
+  .social-media__box-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin: 0 0.8rem;
+  }
+  .social-media__box-icon img{
+    width: 50%;
+  }
+  .copyright__wrapper-text {
+    font-size: 1.2rem;
+    margin: 0.8rem 0 2.4rem;
   }
 }
 
