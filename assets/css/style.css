@@ -109,7 +109,8 @@ textarea {
   margin-right: 0.9rem;
 }
 
-/* NAVBAR MENU */
+/* !NAVBAR MENU */
+
 .navbar__menu {
   width: 75rem;
   margin-left: auto;
@@ -161,6 +162,38 @@ textarea {
   padding: 0.5rem 0;
   margin-right: 1.6rem;
 }
+.submenu {
+  position: relative;
+}
+.submenu__list {
+  position: absolute;
+  top: 3.8rem;
+  right: 1rem;
+  background-color: #1e2026;
+  border-radius: 0.25rem;
+  transition: all .3s ease-in-out;
+  transform-origin: top right;
+  transform: scale(0);
+}
+.submenu:hover .submenu__list{
+  transform: scale(1);
+}
+
+.submenu__list :nth-child(5){
+  border-top: 1px solid #939393;
+}
+.submenu__item:hover {
+  background-color: #292c34;
+}
+.submenu__link {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 1.4rem 1.6rem;
+}
+.submenu__link:hover {
+  color: #15d1c6;
+}
 .navbar__login a {
   padding: 0.3rem 1.6rem;
   color: #fff;
@@ -178,7 +211,7 @@ textarea {
 .navbar__login :nth-child(2):hover {
   background-color: #5e35b1;
 }
-/* Header */
+/*! Header */
 .header {
   background-color: var(--gray-color-100);
   padding: 1px;
@@ -246,7 +279,7 @@ textarea {
   text-decoration: underline;
   color: #0056b3;
 }
-/*  Services */
+/* ! Services */
 .services {
   width: 100%;
   background-color: var(--background-light);
