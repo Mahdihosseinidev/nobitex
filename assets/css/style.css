@@ -171,15 +171,15 @@ textarea {
   right: 1rem;
   background-color: #1e2026;
   border-radius: 0.25rem;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   transform-origin: top right;
   transform: scale(0);
 }
-.submenu:hover .submenu__list{
+.submenu:hover .submenu__list {
   transform: scale(1);
 }
 
-.submenu__list :nth-child(5){
+.submenu__list :nth-child(5) {
   border-top: 1px solid #939393;
 }
 .submenu__item:hover {
@@ -213,6 +213,10 @@ textarea {
 }
 /*! Header */
 .header {
+  background-image: url(/assets/image/jumbotron.3ceb851.svg);
+  height: 159vh;
+  background-repeat: no-repeat;
+  background-position: center top;
   background-color: var(--gray-color-100);
   padding: 1px;
   text-align: center;
