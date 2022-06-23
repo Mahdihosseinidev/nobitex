@@ -690,6 +690,11 @@ textarea {
   display: flex;
   align-items: center;
   border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.copyright__language:hover {
+  background-color: #ffffff99;
+  color: #fff;
 }
 .copyright__language img {
   margin-left: 0.8rem;
