@@ -5,6 +5,7 @@
   --black-color-100: #85888f;
   --gray-color-100: #f2f3f5;
   --background-light: #f2f3f5;
+  --white-color: #fff;
 }
 *,
 *::before,
@@ -213,7 +214,7 @@ textarea {
 }
 /*! Header */
 .header {
-  background-image: url(/assets/image/jumbotron.3ceb851.svg);
+  background-image: url("/assets/image/jumbotron.3ceb851.svg");
   height: 159vh;
   background-repeat: no-repeat;
   background-position: center top;
@@ -282,6 +283,71 @@ textarea {
 .header__link a:hover {
   text-decoration: underline;
   color: #0056b3;
+}
+/* ! Market */
+.active {
+  background-color: #85888f !important;
+  color: var(--white-color) !important;
+}
+.market {
+  position: absolute;
+  top: 800px;
+  width: 98%;
+}
+.market__header {
+  display: flex;
+  min-width: 37rem;
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  border-radius: 1rem 1rem 0 0;
+  background-color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+.market__header p {
+  margin-left: 2.4rem;
+}
+.market__btns {
+  display: flex;
+}
+.market__btns button {
+  padding: 0.6rem 1.6rem;
+  background-color: #e3e4e5;
+  border: none;
+  font-size: 1.5rem;
+  color: #a3a6af;
+}
+.market__view {
+}
+
+/* !why nobitex */
+.whynobitex__title {
+  color: var(--black-color);
+  padding: 6.4rem 0 1.6rem 0;
+  text-align: center;
+  font-size: 2.9rem;
+}
+.whynobitex__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 1.9rem;
+  padding-bottom: 6.4rem;
+}
+.whynobitex__item {
+  text-align: center;
+  margin-top: 2.4rem;
+  padding: 0 1.5rem;
+  /* width: 33.3333; */
+}
+.whynobitex__item h4 {
+  margin-top: 3.2rem;
+  padding-bottom: 0.8rem;
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.whynobitex__item p {
+  max-width: 27rem;
+  color: #4c505b;
 }
 /* ! Services */
 .services {
@@ -581,6 +647,9 @@ textarea {
     left: 8rem;
     top: -6.5rem;
   }
+  .whynobitex__title {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -679,11 +748,18 @@ textarea {
   .cuonter__services {
     flex-direction: column;
   }
+
   .lerning-box {
     flex-flow: row wrap;
   }
   .lerning-item {
     width: 50%;
     max-width: 50%;
+  }
+  .whynobitex__items {
+    flex-direction: column;
+  }
+  .whynobitex__item p {
+    font-size: 1.2rem;
   }
 }
