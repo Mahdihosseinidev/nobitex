@@ -4,11 +4,7 @@
   --black-color: #14151a;
   --black-color-100: #85888f;
   --background-light: #f2f3f5;
-<<<<<<< HEAD
-  --white-color: #fff;
-=======
   --white: #fff;
->>>>>>> 13d1b8e352a5900b1a11070f05f0ee74345afbc1
 }
 *,
 *::before,
@@ -49,11 +45,14 @@ textarea {
   height: auto;
 }
 /* hamber */
+
 .toggle-menu {
+  position: relative;
   width: 5rem;
   height: 3rem;
   padding: 0.25rem 0.75rem;
   background-color: transparent;
+  cursor: pointer;
   border: transparent;
 }
 .navbar__hamber {
@@ -135,7 +134,7 @@ textarea {
   width: 0;
   height: 0;
   border-radius: 0.1rem;
-  border:0.5rem solid transparent ;
+  border: 0.5rem solid transparent;
   border-top: 0.5rem solid #e3e4e5;
   left: 3rem;
   top: 1rem;
@@ -208,11 +207,10 @@ textarea {
 
 /*! Header */
 .header {
-<<<<<<< HEAD
   background-image: url("/assets/image/jumbotron.3ceb851.svg");
-=======
-  background-image: url('../image/jumbotron.3ceb851.svg');
->>>>>>> 13d1b8e352a5900b1a11070f05f0ee74345afbc1
+
+  background-image: url("../image/jumbotron.3ceb851.svg");
+
   height: 159vh;
   background-repeat: no-repeat;
   background-position: center top;
@@ -222,12 +220,12 @@ textarea {
 }
 .header__title {
   color: var(--black-color);
-  margin: 7.2rem 0 0.8rem 0;
+  margin: 7.2rem 0 0.1rem 0;
   font-size: 4.2rem;
   font-weight: 500;
 }
 .subtitle {
-  margin: 0.8rem 0 3.2rem 0;
+  margin: 0rem 0 3.2rem 0;
   color: var(--black-color);
   font-size: 2.6rem;
   font-weight: 400;
@@ -281,11 +279,11 @@ textarea {
   text-decoration: underline;
   color: #0056b3;
 }
-<<<<<<< HEAD
+
 /* ! Market */
 .active {
   background-color: #85888f !important;
-  color: var(--white-color) !important;
+  color: var(--white) !important;
 }
 .market {
   position: absolute;
@@ -297,7 +295,7 @@ textarea {
   min-width: 37rem;
   padding: 1.6rem 1.6rem 0 1.6rem;
   border-radius: 1rem 1rem 0 0;
-  background-color: var(--white-color);
+  background-color: var(--white);
   justify-content: space-between;
   align-items: center;
 }
@@ -347,9 +345,6 @@ textarea {
   max-width: 27rem;
   color: #4c505b;
 }
-=======
-
->>>>>>> 13d1b8e352a5900b1a11070f05f0ee74345afbc1
 /* ! Services */
 .services {
   width: 100%;
@@ -457,6 +452,7 @@ textarea {
   font-weight: 400;
 }
 /* LERNING */
+
 .lerning {
   width: 100%;
   background-color: var(--white);
@@ -628,7 +624,7 @@ textarea {
 .support__btns-white-btn:hover a {
   color: var(--white);
 }
-.support__btns-green-btn{
+.support__btns-green-btn {
   background-color: var(--second-color);
   margin-right: 0.5rem;
 }
@@ -651,7 +647,7 @@ textarea {
   display: flex;
   flex-direction: column;
 }
-.main-footer__links{
+.main-footer__links {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -686,7 +682,7 @@ textarea {
 }
 .main-footer__nav li a {
   font-size: 1.5rem;
-  color: #A3A5A8;
+  color: #a3a5a8;
 }
 .main-footer__nav li a:hover {
   color: var(--white);
@@ -754,13 +750,13 @@ textarea {
   align-items: center;
 }
 .copyright__left {
-  display:  flex;
+  display: flex;
 }
 .copyright__language {
   margin-right: 1.6rem;
   padding: 0.6rem 2.4rem;
-  border: 1px solid #A3A5A8;
-  color: #A3A5A8;
+  border: 1px solid #a3a5a8;
+  color: #a3a5a8;
   font-size: 1.5rem;
   background-color: transparent;
   display: flex;
@@ -777,14 +773,14 @@ textarea {
 }
 .copyright__wrapper-text {
   font-size: 1.6rem;
-  color: #A3A5A8;
+  color: #a3a5a8;
   direction: ltr;
 }
 .copyright__wrapper-text code {
   background-color: #1e2026;
   font-size: 1rem;
 }
-.copyright__logo{
+.copyright__logo {
   display: none;
   align-items: center;
   color: var(--white);
@@ -831,6 +827,12 @@ textarea {
   .navbar__login :nth-child(2) {
     font-size: 1.2rem;
   }
+  .header__title{
+    font-size: 2.9rem;
+  }
+  .subtitle{
+    font-size: 1.9rem;
+  }
   .content-services {
     padding: 2.5rem;
   }
@@ -873,10 +875,9 @@ textarea {
     left: 8rem;
     top: -6.5rem;
   }
-<<<<<<< HEAD
   .whynobitex__title {
     font-size: 1.8rem;
-=======
+  }
   .support__title {
     font-size: 1.5rem;
   }
@@ -909,15 +910,14 @@ textarea {
   }
   .copyright__wrapper-text {
     font-size: 1.5rem;
-    margin-top: 0.8rem ;
+    margin-top: 0.8rem;
   }
-  .copyright__logo{
+  .copyright__logo {
     display: flex;
   }
   .copyright__language img {
     width: 1.3rem;
     height: 1.3rem;
->>>>>>> 13d1b8e352a5900b1a11070f05f0ee74345afbc1
   }
 }
 
@@ -941,12 +941,46 @@ textarea {
   .support__btns-white {
     display: none;
   }
-  .main-footer__links{
+  .main-footer__links {
     padding: 2.4rem 1.5rem;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .header__title{
+    font-size: 2.2rem;
+  }
+  .subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+  }
+  .header__join{
+    flex-direction: column;
+  }
+  .header__join input {
+    width: 40.3rem;
+    box-shadow: -0.3rem 0.3rem 0.5rem 0.1rem #898484;
+    /* border-radius: 0 0.35rem 0.35rem 0; */
+    height: 100%;
+    border: none;
+    padding: 0.9rem 2.4rem;
+    border-radius: 0.4rem;
+    outline: none;
+    margin-bottom: .2rem;
+  }
+  .header__join button {
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding: 0.6rem 2.4rem;
+    color: var(--white);
+    background-color: #00aea4;
+    border: 0.1rem solid transparent;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    width: 40.3rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
   .content-services {
     flex-direction: column-reverse;
     align-items: flex-start;
@@ -1014,7 +1048,7 @@ textarea {
     position: relative;
     padding: 0;
   }
-  /** START - Accordion */
+  /*  START - Accordion */
   .main-footer__nav-title {
     font-size: 1.5rem;
     cursor: pointer;
@@ -1032,14 +1066,14 @@ textarea {
   .main-footer__nav li a {
     font-size: 1.2rem;
   }
-  .main-footer__nav{
+  .main-footer__nav {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     padding: 0.8rem 0 0;
     margin: 0;
   }
-  /** END - Accordion */
+  /* END - Accordion */
   .main-footer__application-download-box {
     flex-flow: row wrap;
     justify-content: center;
@@ -1065,7 +1099,7 @@ textarea {
     width: 3.2rem;
     height: 3.2rem;
   }
-  .social-media__box-icon img{
+  .social-media__box-icon img {
     width: 50%;
   }
   .copyright__wrapper-text {
@@ -1115,7 +1149,7 @@ textarea {
     width: 50%;
     max-width: 50%;
   }
-<<<<<<< HEAD
+
   .whynobitex__items {
     flex-direction: column;
   }
@@ -1123,6 +1157,3 @@ textarea {
     font-size: 1.2rem;
   }
 }
-=======
-}
->>>>>>> 13d1b8e352a5900b1a11070f05f0ee74345afbc1
